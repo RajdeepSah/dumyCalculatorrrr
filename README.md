@@ -10,6 +10,35 @@ Run the calculator from the command line:
 python simple_calculator.py
 ```
 
+## TI-84 style desktop calculator
+
+Install the UI dependencies (Tkinter ships with Python, but matplotlib is required for graphing):
+
+```bash
+pip install matplotlib
+```
+
+Then start the calculator application:
+
+```bash
+python main.py
+```
+
+The interface mimics a TI-84 layout, supports history, memory operations, trigonometric/logarithmic functions, and renders graphs using matplotlib.
+
+## `ti84trail` branch
+
+A dedicated branch named `ti84trail` tracks the TI-84 style calculator implementation for experimentation or sharing. If you need to publish the branch to a remote such as GitHub, run:
+
+```bash
+git checkout work
+git pull
+git checkout -B ti84trail
+git push origin ti84trail
+```
+
+The branch currently contains the same code as the `work` branch.
+
 ## Simple calculator (web)
 
 Open `index.html` in any modern browser or serve the project locally, for example:
